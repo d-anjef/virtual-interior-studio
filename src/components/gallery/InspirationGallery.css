@@ -1,0 +1,36 @@
+.inspiration-gallery {
+  padding: var(--spacing-lg) 0;
+}
+
+.gallery-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.gallery-modal-content img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.modal-details p {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+}
+
+.modal-details strong {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 640px) {
+  .gallery-grid-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,46 @@
+.stats-widget {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.stats-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  font-size: var(--text-3xl);
+  color: white;
+  flex-shrink: 0;
+}
+
+.stats-content {
+  flex: 1;
+}
+
+.stats-label {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.stats-value {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.stats-trend {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.stats-trend.positive {
+  color: #10b981;
+}
+
+.stats-trend.negative {
+  color: #ef4444;
+}

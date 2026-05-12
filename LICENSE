@@ -1,0 +1,11 @@
+
+---
+
+### ✅ Final Checklist Before Pushing:
+
+1.  [ ] Does `npm run dev` work locally?
+2.  [ ] Did you replace `YOUR_USERNAME` and `virtual-interior-studio` in the README?
+3.  [ ] Did you add the live Vercel URL in the README?
+
+
+**Ship it! 🚀**
