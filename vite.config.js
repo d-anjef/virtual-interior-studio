@@ -3,16 +3,15 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 3000,
-    open: true
-  },
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'three': ['three', '@react-three/fiber', '@react-three/drei'],
-          'animations': ['framer-motion', 'gsap']
+        // FIX: manualChunks must be a function, not an object
+        manualChunks: (id) => {
+          // Separate all node_modules into a 'vendor' chunk
+          if (id.includes('node_modules')) {
+            return 'vendor'
+          }
         }
       }
     }
