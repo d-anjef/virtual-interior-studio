@@ -30,7 +30,7 @@ Design your dream space in minutes. Drag, drop, customize, and export.
 
 ## 🚀 Live Demo
 
-**[👉 Click here to view Live Demo](https://YOUR_VERCEL_URL.vercel.app)**
+**[👉 Click here to view Live Demo](https://virtual-interior-studio.vercel.app/)**
 
 ## 🎨 Features
 
